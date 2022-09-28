@@ -1,5 +1,7 @@
 package com.zts.springframework.beans;
 
+import java.util.LinkedList;
+
 /**
  * @Author zhangtusheng
  * @Date 2022 09 20 23 52
@@ -11,7 +13,10 @@ public class BeansException extends RuntimeException {
         super(msg);
     }
 
-    public BeansException(String msg, Throwable cause){
+    public BeansException(String msg, Throwable cause) {
         super(msg, cause);
+        LinkedList<Integer> linkedList = new LinkedList<>();
+        linkedList.add(0);
+
     }
 }

@@ -5,5 +5,5 @@ package com.zts.springframework.beans.factory;
  * @Date 2022 09 20 23 52
  * @describe：
  **/
-public class HierarchicalBeanFactory {
+public interface HierarchicalBeanFactory extends BeanFactory{
 }

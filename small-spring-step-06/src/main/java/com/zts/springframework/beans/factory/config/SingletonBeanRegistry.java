@@ -5,5 +5,7 @@ package com.zts.springframework.beans.factory.config;
  * @Date 2022 09 20 23 48
  * @describe：
  **/
-public class SingletonBeanRegistry {
+public interface SingletonBeanRegistry {
+
+    Object getSingleton(String beanName);
 }
