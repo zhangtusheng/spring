@@ -1,0 +1,17 @@
+package cn.zts.springframework.aop;
+
+/**
+ * @Author zhangtusheng
+ * @Date 2023 04 26 23 21
+ * @describe：
+ **/
+public interface ClassFilter {
+
+    /**
+     * Should the pointcut apply to the given interface or target class?
+     * @param clazz the candidate target class
+     * @return whether the advice should apply to the given target class
+     */
+    boolean matches(Class<?> clazz);
+
+}
